@@ -27,10 +27,18 @@
 4. Drafting proposes a corrected line using approved wording.
 5. The orchestrator asks the owner to approve. The decision is appended to the hash-chained audit log.
 
+## Low-literacy and low-connectivity design
+
+- Voice notes in and out (speech-to-text and text-to-speech in Kannada and Hindi), so nothing has to be read or typed.
+- WhatsApp as the main interface: no app install, works on entry-level Android phones.
+- Images compressed on upload for 2G/3G; uploads queued and retried when the network drops.
+- SMS fallback for due-date reminders when the phone has no data.
+- An assisted mode, so a trader-association volunteer or the owner's CA can act for the owner, with the owner still approving.
+
 ## Knowledge base
 
 CGST Act and Rules, CBIC notifications and circulars, GSTN advisories, MSMED Act 2006 (sections 15–16), Income-tax Act 2025 with a map from 1961-Act sections, and MSME ministry FAQs. Each source is stored with a version, an effective date and a source URL.
 
 ## Stack
 
-FastAPI · ChromaDB + BM25 (rank-bm25) · sentence-transformers (all-MiniLM-L6-v2) · PyMuPDF + Tesseract · SQLite (registry, audit) · React + TypeScript + Vite · provider-independent LLM interface · Docker on Render · WhatsApp via Twilio sandbox for the demo.
+Agent orchestration on Lyzr AI (the hackathon's AI partner, using participant credits), with a LangGraph fallback · FastAPI · ChromaDB + BM25 (rank-bm25) · sentence-transformers (all-MiniLM-L6-v2) · PyMuPDF + Tesseract · SQLite (registry, audit) · React + TypeScript + Vite · provider-independent LLM interface · Docker on Render · WhatsApp via Twilio sandbox for the demo.

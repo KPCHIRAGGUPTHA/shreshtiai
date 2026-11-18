@@ -6,7 +6,7 @@
 
 ## Short description of the idea
 
-ShreshtiAI is an agentic AI compliance assistant for India's micro enterprises. The owner sends photos of invoices, bills and government notices on WhatsApp or the web. A team of AI agents extracts the data, checks it against GST, income-tax and MSMED Act rules, flags every error and deadline with the exact rule section cited, and produces the corrected invoice, return summary, notice reply or payment reminder for one-tap owner approval, in English, Kannada or Hindi. Hours of monthly paperwork become a few minutes of review, and avoidable late fees and penalties disappear.
+ShreshtiAI is an agentic AI compliance assistant for India's micro enterprises. The owner sends photos of invoices, bills and government notices on WhatsApp or the web. A team of AI agents extracts the data, checks it against GST, income-tax and MSMED Act rules, flags every error and deadline with the exact rule section cited, and produces the corrected invoice, return summary, notice reply or payment reminder for one-tap owner approval, in English, Kannada or Hindi. It is voice-first and runs over WhatsApp on any low-cost Android phone, so it works for owners with low literacy and patchy connectivity. Hours of monthly paperwork become a few minutes of review, and avoidable late fees and penalties disappear.
 
 ## Detailed explanation of the idea
 
@@ -23,9 +23,11 @@ ShreshtiAI is an agentic AI compliance assistant for India's micro enterprises. 
 
 *Who benefits.* Shop owner: no avoidable fines, and paid on time. CA: clean, pre-checked files, so one CA can serve far more small clients. Trader association: members stay compliant and credit-ready.
 
+*Built for Bharat.* Voice-first: owners speak and listen in Kannada or Hindi, with no forms to read. It works over WhatsApp on any low-cost Android phone, compresses photos for 2G/3G, queues uploads when offline, and falls back to SMS reminders where there is no data. A trader-association volunteer or the owner's CA can also operate it on the owner's behalf.
+
 *Proof plan.* In the prototype round, ShreshtiAI will be tested head-to-head against a single LLM prompt on a labelled set of about 20 synthetic invoices with known errors, and the method and results will be published. Judges can try it with no sign-up through role-based demo logins (Owner, CA, Association) on a fictional shop, Sri Lakshmi Traders, Birur. Every approval is recorded in a tamper-evident, hash-chained audit log.
 
-*Tech stack.* FastAPI, agent orchestration (LangGraph-style), PyMuPDF + OCR, ChromaDB + BM25 hybrid retrieval, a React + TypeScript dashboard, a WhatsApp interface, and multilingual output. The citation-grounded retrieval core is adapted from my deployed compliance-RAG system, BrandSentry AI. The first deterministic GST checks (GSTIN checksum, tax type, late fee) are already written and tested in the ShreshtiAI repo.
+*Tech stack.* FastAPI, agent orchestration on Lyzr AI (the hackathon's AI partner, using participant credits) with a LangGraph fallback, PyMuPDF + OCR, ChromaDB + BM25 hybrid retrieval, a React + TypeScript dashboard, a WhatsApp interface, and multilingual output. The citation-grounded retrieval core is adapted from my deployed compliance-RAG system, BrandSentry AI. The first deterministic GST checks (GSTIN checksum, tax type, late fee) are already written and tested in the ShreshtiAI repo.
 
 *Impact and roadmap.* Pilot targets: monthly compliance review under 15 minutes, zero missed due dates, and receivables recovered once they pass 45 days. Phase 2 runs pilots with trader associations. Phase 3 turns a consented, clean compliance history into a credit-readiness profile matched to MUDRA, CGTMSE and GST Sahay invoice financing, which addresses problem 3.2 as well.
 

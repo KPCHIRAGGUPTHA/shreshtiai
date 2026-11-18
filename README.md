@@ -32,11 +32,20 @@ Recent rule changes removed the chance to fix mistakes later. From the July 2025
 
 Every finding is **COMPLIANT**, **NON-COMPLIANT**, **OUTDATED** (a rate changed under GST 2.0, or a 1961-Act section replaced by the 2025 Act) or **NEEDS REVIEW**. The agent abstains rather than guesses.
 
+## Built for Bharat
+
+The brief asks for solutions that work for people with low literacy, limited connectivity and low-cost phones. ShreshtiAI is designed for that:
+
+- **Voice-first:** owners speak and listen in Kannada or Hindi, with no forms to read.
+- **Any low-cost phone:** it runs over WhatsApp on an entry-level Android phone, with no app install.
+- **Patchy networks:** photos are compressed for 2G/3G, uploads are queued while offline, and reminders fall back to SMS where there's no data.
+- **Assisted use:** a trader-association volunteer or the owner's CA can operate it on the owner's behalf.
+
 ## The agents
 
 | Agent | Job |
 | --- | --- |
-| Orchestrator | Plans goals like "close this quarter", keeps per-business memory, routes risky steps to approval |
+| Orchestrator (on Lyzr AI, the hackathon's AI partner) | Plans goals like "close this quarter", keeps per-business memory, routes risky steps to approval |
 | Intake | OCR + LLM extraction of GSTIN, HSN, rates, tax amounts, dates, with confidence per field |
 | Rule-check | Deterministic checks first, then hybrid BM25 + vector retrieval over versioned official texts. Cite or abstain |
 | Deadline | Due dates for monthly / QRMP / composition filers; late fee and interest at stake |
