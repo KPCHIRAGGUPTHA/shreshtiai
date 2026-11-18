@@ -85,7 +85,7 @@ See [`docs/ROADMAP.md`](docs/ROADMAP.md).
 
 ## Submission files
 
-- [`submission/ShreshtiAI_GAVS_Hackathon.pdf`](submission/ShreshtiAI_GAVS_Hackathon.pdf) is the pitch deck
+- [`submission/ShreshtiAI_GAVS_Hackathon.pdf`](submission/ShreshtiAI_GAVS_Hackathon.pdf) is the pitch deck ([PowerPoint version](submission/ShreshtiAI_GAVS_Hackathon.pptx))
 - [`submission/SUBMISSION_TEXT.md`](submission/SUBMISSION_TEXT.md) is the text submitted on HackCulture
 
 ## Why the name
